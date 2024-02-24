@@ -14,7 +14,7 @@ export class ContentBlogComponent implements OnInit {
 
   contBlogs: any[] = [
     {
-      img: '../../../../../assets/img/blog/b1.jpg',
+      img: '/assets/img/blog/b1.jpg',
       title: 'Tokyo Earrings',
       p: "EÉRA's 'Tokyo' earring is named after the city that inspired the brand's very first design (and just about every other piece to date). Cast from white gold, it has a diamond-studded post anchored by a sculptural silver charm with a vibrant fuchsia coating. Wear it mismatched with similar styles.",
       read: 'Continue Reading',
