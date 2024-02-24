@@ -1,0 +1,27 @@
+<!-- Details Product -->
+<section
+  id="prodetails"
+  class="section-p1 flex sm:flex-col md:flex-row mt-3 lg:items-start sm:items-center"
+>
+  <div class="md:w-[40%] sm:w-[100%] md:mr-12 sm:mr-0">
+    <img class="h-[570px]" src="{{ imgSrc }}" width="100%" #mainImg alt="" />
+  </div>
+  <div class="mt-6 md:w-1/2 sm:w-full">
+    <h6 class="font-bold p-0">Home / Accessories</h6>
+    <h4 class="px-0 pt-8 pb-4 font-bold">{{ titleProd }}</h4>
+    <h2 class="text-26-px">{{ priceProd }}</h2>
+    <input
+      (change)="valChange($event)"
+      type="number"
+      value="{{ valInput }}"
+      class="w-[50px] h-12 border mt-10 pl-3 mr-3 text-base focus:outline-primary"
+    />
+    <button class="normal !text-white !bg-primary" (click)="addCart($event)">
+      Add To Cart
+    </button>
+    <h4 class="font-bold px-0 pt-7 pb-4">Care</h4>
+    <span class="leading-6"
+      >Last for a lifetime, be careful with alcohol, perfume & soap.</span
+    >
+  </div>
+</section>
